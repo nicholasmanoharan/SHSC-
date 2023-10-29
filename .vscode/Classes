@@ -1,0 +1,16 @@
+#pragma once
+#include <string>
+
+class Media {
+
+    public: 
+        Media(const std::String& title, int year);
+        virtual void displayInfo() const;
+        virtual bool search(const std::string& term) const;
+        virtual ~Media();
+
+    private:
+        std::string title;
+        int year; 
+
+};
